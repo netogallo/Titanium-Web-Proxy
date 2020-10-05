@@ -23,7 +23,7 @@ namespace Titanium.Web.Proxy.EventArguments
 
         internal readonly CancellationTokenSource CancellationTokenSource;
 
-        internal TcpServerConnection ServerConnection => HttpClient.Connection;
+        public TcpServerConnection ServerConnection => HttpClient.Connection;
 
         /// <summary>
         ///     Holds a reference to client

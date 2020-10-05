@@ -11,7 +11,7 @@ namespace Titanium.Web.Proxy.Network.Tcp
     /// <summary>
     ///     An object that holds TcpConnection to a particular server and port
     /// </summary>
-    internal class TcpServerConnection : IDisposable
+    public class TcpServerConnection : IDisposable
     {
         public Guid Id { get; } = Guid.NewGuid();
 
@@ -62,7 +62,7 @@ namespace Titanium.Web.Proxy.Network.Tcp
         /// <summary>
         /// The TcpClient.
         /// </summary>
-        internal Socket TcpSocket { get; }
+        public Socket TcpSocket { get; }
 
         /// <summary>
         ///     Used to write lines to server
